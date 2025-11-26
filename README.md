@@ -41,8 +41,13 @@ This makes it easy to integrate encoders into UI logic, menu systems, and reacti
 
   Required to download and link:
 
-  ✔ async_await → required for asynchronous filtering and timing 👉 https://github.com/dimakomplekt/async_await  
-  ✔ button_control → required for handling the encoder’s SW button 👉 https://github.com/dimakomplekt/button_control  
+  ✔ async_await → required for asynchronous filtering and timing
+  
+  👉 https://github.com/dimakomplekt/async_await  
+  
+  ✔ button_control → required for handling the encoder’s SW button
+  
+  👉 https://github.com/dimakomplekt/button_control  
 
 ⚠️ BIG WARNING ⚠️
 
