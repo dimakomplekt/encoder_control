@@ -178,3 +178,6 @@ enc_rotation_value_control(&encoder_ds_ll,
   * Extended data type support (float, fixed-point, bounded numeric ranges)
   * Tighter integration with async_await and button_control
   * Hardware timer auto-selection (STM32 HAL/LL)
+
+
+  🫵 You are welcome to help us make this library better!
