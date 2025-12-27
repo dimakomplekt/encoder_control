@@ -112,7 +112,7 @@ Initialization API looks like:
 // Encoder 1 pins
 
 // Encoder
-encoder_ctx encoder_ds_ll;
+encoder_ctx encoder_1;
 
 // PWM parameters
 uint8_t duty_cycle = 10;
@@ -121,11 +121,11 @@ uint8_t duty_cycle_min = 2;
 uint8_t duty_cycle_max = 15;
 
 // SW control flags
-bool encoder_ds_ll_pressed = false;
-bool encoder_ds_ll_prev_pressed = false;
+bool encoder_1_pressed = false;
+
 
 // Encoder initialization
-encoder_initialization(&encoder_ds_ll,
+encoder_initialization(&encoder_1,
     GPIO_PIN_NONE,                // Choose to use the default 5V pin for enc VCC
     GPIO_PIN_NONE,                // Choose to use the default GND pin for the enc GND
     ENC_DUTY_SW,                  // SW by the defined pin name
@@ -138,16 +138,16 @@ encoder_initialization(&encoder_ds_ll,
 ⚡ Control API looks like:
 
 ```c
-// Duty encoder press control
-flag_control_by_but_onetime_press(&encoder_ds_ll.sw_button, &encoder_ds_ll_pressed);
+// Encoder SW-button press control
+flag_control_by_but_onetime_press(&encoder_1.sw_button, &encoder_1_pressed);
 
-if (encoder_ds_ll_pressed)
+if (encoder_1_pressed)
 {
     // Your logic
 }
 
 // Control the duty cycle parameter by the encoder rotation
-enc_rotation_value_control(&encoder_ds_ll,
+enc_rotation_value_control(&encoder_1,
     CLOCKWISE, 
     LIMITATION,
     &duty_cycle,
