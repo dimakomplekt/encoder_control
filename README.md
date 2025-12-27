@@ -111,7 +111,7 @@ Initialization API looks like:
 #define ENC_DUTY_CLK GPIO_NUM_14
 // Encoder 1 pins
 
-// Encoder
+// Encoder struct initialization
 encoder_ctx encoder_1;
 
 // PWM parameters
