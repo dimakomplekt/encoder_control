@@ -174,7 +174,7 @@ enc_rotation_value_control(&encoder_1,
 
   * Full callback support
   * Extended data type support (float, fixed-point, bounded numeric ranges)
-  * Hardware timer auto-selection (STM32 HAL/LL)
+  * Hardware timer selection for STM32 version (HAL/LL)
 
 
   🫵 You are welcome to help us make this library better!
