@@ -166,9 +166,7 @@ enc_rotation_value_control(&encoder_1,
 
 ⚠️ Known Limitations
 
-  * Simultaneous processing of some SW press control logic still requires debug (inside the button_control library)
   * Callback system is partially implemented, needs full integration (inside the button_control library)
-  * Some rare high-frequency rotation edge cases require filtering improvement
   * Error handlers planned but not fully implemented
 
 
@@ -176,7 +174,6 @@ enc_rotation_value_control(&encoder_1,
 
   * Full callback support
   * Extended data type support (float, fixed-point, bounded numeric ranges)
-  * Tighter integration with async_await and button_control
   * Hardware timer auto-selection (STM32 HAL/LL)
 
 
