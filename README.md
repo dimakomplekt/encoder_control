@@ -168,6 +168,7 @@ enc_rotation_value_control(&encoder_1,
 
   * Callback system is partially implemented, needs full integration (inside the button_control library)
   * Error handlers planned but not fully implemented
+  * Realization of the interaction with controller-role encoders only.
 
 
 🛠 Future Plans
@@ -175,6 +176,7 @@ enc_rotation_value_control(&encoder_1,
   * Full callback support
   * Extended data type support (float, fixed-point, bounded numeric ranges)
   * Hardware timer selection for STM32 version (HAL/LL)
+  * Realization of the interaction with rotary-sensor encoders
 
 
   🫵 You are welcome to help us make this library better!
